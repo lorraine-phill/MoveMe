@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Example Responsive Site - Bootstrap- Contact</title>
+    <title>Example Responsive Site - Bootstrap 3 - Contact</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="clients.html">Clients</a></li>
-          <li class="active"><a href="contacts.html">Contacts</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -56,8 +56,8 @@
             <img class="img-responsive tpad" src="images/moveMe.png">
           </div>
           <div class="col-xs-9">
-            <h1>MOVE ME <span class="text-muted">&raquo; Your Travel companion</span></h1>
-            <p class="lead">Move Me is a unique App designed to help people all over the world to get home quicker, by connecting with your local transport network</p>
+            <h1>MOVE ME <span class="text-muted">&raquo; Contact Us</span></h1>
+            <p class="lead">We are always on hand. Drop by, call or send us an email.</p>
          </div>
        </div>
      </div> 
@@ -65,8 +65,74 @@
     <!-- END: Intro-->
 
     <!-- BEGIN: Main page content-->
+    <div class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=200+Trafalgar+Rd,+Oakville,+ON&amp;aq=0&amp;oq=200+trafalgar&amp;sll=43.447946,-79.624382&amp;sspn=0.321037,0.617294&amp;ie=UTF8&amp;hq=&amp;hnear=200+Trafalgar+Rd,+Oakville,+Ontario+L6J+3G7&amp;t=m&amp;z=14&amp;ll=43.449604,-79.670214&amp;output=embed">
+      </iframe><br />
+    </div>
     <div class="container">
+      <div class="row">    
+        <div class="col-lg-12">
+          <small><a href="https://maps.google.ca/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=200+Trafalgar+Rd,+Oakville,+ON&amp;aq=0&amp;oq=200+trafalgar&amp;sll=43.447946,-79.624382&amp;sspn=0.321037,0.617294&amp;ie=UTF8&amp;hq=&amp;hnear=200+Trafalgar+Rd,+Oakville,+Ontario+L6J+3G7&amp;t=m&amp;z=14&amp;ll=43.449604,-79.670214" style="color:#0000FF;text-align:left">View Larger Map</a> 
+          </small> 
+        </div>
+      </div>
+    </div>
+    <div class="container padded2">
       <div class="row">
+        <div class="col-sm-8">
+          <h2>Get in touch</h2>
+          <hr>
+          <p>Need a quote, enquiry about our team creating your App or have a suggestion for the <strong>Move Me</strong> App, we need to hear from you:
+          </p>
+          <form class="form-horizontal tpad" role="form">
+            <div class="form-group">
+              <label for="email" class="col-lg-2 control-label">Email</label>
+              <div class="col-lg-10">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group tpad2">
+              <label for="message" class="col-lg-2 control-label">Message</label>
+              <div class="col-lg-10">
+                <textarea class="form-control" rows="6" id="message" placeholder="Message..."></textarea>
+              </div>
+            </div>
+            <div class="form-group tpad2">
+              <div class="col-lg-offset-2 col-lg-10">
+                <a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Send</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title">Thank you for contacting us</h3>
+                </div>
+                <div class="modal-body">
+                    <p>We appreciate you getting in touch. Please be patient, we will contact you shortly with a reply.</p>
+                    <p>The MoveMe Team.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html" class="btn btn-default btn-lg">OK</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="col-sm-4">
+          <img src="images/office.jpg" class="img-circle img-responsive">
+          <hr>
+          <address>
+            <h3>MoveMe Inc.</h3>
+            450 Long Road<br>
+            Atlanta, GA 30093<br>
+            <a href="mailto:abc@movee.com">abc@movee.com</a><br>
+            <abbr title="Phone">P:</abbr>908 123-4567
+          </address>
+        </div>
       </div>
     </div>
     <!-- END: Main page content-->
@@ -97,23 +163,23 @@
               <li class="active"><a href="#android" data-toggle="tab">Android</a></li>
               <li><a href="#bb" data-toggle="tab">Blackberry</a></li>
               <li><a href="#ios" data-toggle="tab">iOS</a></li>
-              <li><a href="#windows" data-toggle="tab">Windows</a></li>
+              <li><a href="#win" data-toggle="tab">Windows</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade in active" id="android">
-                <p><img src="images/gplay.jpg" alt="google" class="pull-right">Android... Donec eget sem lacus. Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus. Pellentesque eleifend feugiat tincidunt. <br><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
+                <p><img src="images/gplay.jpg" alt="Google" class="pull-right">Android... Donec eget sem lacus. Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus. Pellentesque eleifend feugiat tincidunt. <br><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
                 </p>
               </div>
               <div class="tab-pane fade in" id="bb">
-                <p><img src="images/bbstore.jpg" alt="google" class="pull-right">Blackberry... Donec eget sem lacus. Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus. Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
+                <p><img src="images/bbstore.jpg" alt="Blackberry" class="pull-right">Blackberry... Donec eget sem lacus. Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus. Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
                 </p>
               </div>
               <div class="tab-pane fade in" id="ios">
-                <p><img src="images/appstore.jpg" alt="google" class="pull-right">iOS... Donec eget sem lacus. Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus. Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
+                <p><img src="images/appstore.jpg" alt="iOs" class="pull-right">iOS... Donec eget sem lacus. Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus. Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
                 </p>
               </div>
               <div class="tab-pane fade in" id="win">
-                <p><img src="images/winstore.jpg" alt="google" class="pull-right">Windows... Donec eget sem lacus. Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus. Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
+                <p><img src="images/winstore.jpg" alt="Windows" class="pull-right">Windows... Donec eget sem lacus. Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus. Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
                 </p>
               </div>
             </div>
@@ -138,7 +204,7 @@
               <address>
                 <h3>MoveMe Inc.</h3>
                 450 Long Road<br>
-                Atlanta, GA 30093
+                Atlanta, GA 30093<br>
                 <a href="mailto:abc@movee.com">abc@movee.com</a><br>
                 <abbr title="Phone">P:</abbr>908 123-4567
               </address>
@@ -152,7 +218,6 @@
       </div>
     </div>
     <!-- END: Footer-->
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
